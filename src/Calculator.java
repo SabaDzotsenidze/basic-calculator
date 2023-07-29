@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.geom.RoundRectangle2D;
 import java.util.Objects;
 
 public class Calculator implements ActionListener {
@@ -28,6 +29,10 @@ public class Calculator implements ActionListener {
         textfield.setBounds(50, 25, 300, 50);
         textfield.setFont(myFont);
         textfield.setEditable(false);
+        textfield.setBackground(new Color(0x2C3033));
+        textfield.setForeground(Color.white);
+        textfield.setHorizontalAlignment(SwingConstants.RIGHT);
+        textfield.setBorder(null);
 
         addButton = new JButton("+");
         minusButton = new JButton("-");
@@ -35,9 +40,9 @@ public class Calculator implements ActionListener {
         divisionButton = new JButton("/");
         decimalButton = new JButton(".");
         equalsButton = new JButton("=");
-        deleteButton = new JButton("Delete");
-        clearButton = new JButton("Clear");
-        negButton = new JButton("(-)");
+        deleteButton = new JButton("DEL");
+        clearButton = new JButton("AC");
+        negButton = new JButton("NEG");
 
         functionButtons[0] = addButton;
         functionButtons[1] = minusButton;
@@ -53,6 +58,9 @@ public class Calculator implements ActionListener {
             functionButtons[i].addActionListener(this);
             functionButtons[i].setFont(myFont);
             functionButtons[i].setFocusable(false);
+            functionButtons[i].setBackground(new Color(0x202125));
+            functionButtons[i].setForeground(new Color(0x90B3ED));
+            functionButtons[i].setBorderPainted(false);
         }
 
         for (int i = 0; i < 10; i++) {
@@ -60,15 +68,19 @@ public class Calculator implements ActionListener {
             numberButtons[i].addActionListener(this);
             numberButtons[i].setFont(myFont);
             numberButtons[i].setFocusable(false);
+            numberButtons[i].setBackground(new Color(0x202125));
+            numberButtons[i].setForeground(new Color(0xE5E6EA));
+            numberButtons[i].setBorderPainted(false);
         }
-        negButton.setBounds(50, 430, 100, 50);
-        deleteButton.setBounds(150, 430, 100, 50);
-        clearButton.setBounds(250, 430, 100, 50);
+
+        negButton.setBounds(50, 400, 100, 50);
+        deleteButton.setBounds(150, 400, 100, 50);
+        clearButton.setBounds(250, 400, 100, 50);
 
         panel = new JPanel();
         panel.setBounds(50, 100, 300, 300);
         panel.setLayout(new GridLayout(4, 4, 10, 10));
-        panel.setBackground(Color.white);
+        panel.setBackground(new Color(0x202125));
         panel.add(numberButtons[1]);
         panel.add(numberButtons[2]);
         panel.add(numberButtons[3]);
@@ -86,7 +98,7 @@ public class Calculator implements ActionListener {
         panel.add(equalsButton);
         panel.add(divisionButton);
 
-        frame.getContentPane().setBackground(Color.white);
+        frame.getContentPane().setBackground(new Color(0x202125));
         frame.add(panel);
         frame.add(negButton);
         frame.add(deleteButton);
@@ -148,6 +160,11 @@ public class Calculator implements ActionListener {
             }
             textfield.setText(String.valueOf(result));
             num1 = result;
+            if (result < 0) {
+                textfield.setBackground(new Color(224, 16, 16));
+            } else {
+                textfield.setBackground(new Color(30, 155, 31));
+            }
         }
         if (e.getSource() == clearButton) {
             textfield.setText("");
@@ -167,5 +184,5 @@ public class Calculator implements ActionListener {
                 textfield.setText(Double.toString(number));
             }
         }
-        }
+    }
 }
