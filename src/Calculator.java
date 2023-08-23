@@ -13,7 +13,7 @@ public class Calculator implements ActionListener {
     JButton decimalButton, equalsButton, deleteButton, clearButton, negButton;
     JPanel panel;
 
-    Font myFont = new Font("Dialog Input", Font.TRUETYPE_FONT, 30);
+    Font myFont = new Font("Dialog Input", Font.TRUETYPE_FONT, 28);
     double num1 = 0;
     double num2 = 0;
     double result = 0;
