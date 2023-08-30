@@ -5,11 +5,11 @@ The Java Calculator with GUI is a user-friendly calculator application built usi
 ## Features
 Graphical User Interface: Intuitive and interactive interface for easy calculation.  <br>
 Addition: Perform addition of two or more numbers.  <br>
-Subtraction: Calculate the difference between two numbers.
-Multiplication: Multiply two or more numbers together.
-Division: Divide one number by another.
-Negative Numbers: Input negative numbers for calculations.
-Error Handling: User-friendly error messages for invalid inputs and division by zero.
+Subtraction: Calculate the difference between two numbers. <br>
+Multiplication: Multiply two or more numbers together. <br>
+Division: Divide one number by another. <br> 
+Negative Numbers: Input negative numbers for calculations. <br>
+Error Handling: User-friendly error messages for invalid inputs and division by zero.  <br>
 
 ## Prerequisites
 Java Development Kit (JDK) installed on your system.
