@@ -1,5 +1,4 @@
-#![Screenshot 2023-08-25 at 1 04 42 AM](https://github.com/SabaDzotsenidze/basic-calculator/assets/138164412/ea34cf25-e9c6-4b66-999a-db6321a42c19)
- Java Calculator with GUI
+#Java Calculator with GUI
 
 The Java Calculator with GUI is a user-friendly calculator application built using Java Swing, a graphical user interface toolkit. This calculator provides a visual interface for performing basic arithmetic operations such as addition, subtraction, multiplication, and division, while also allowing the input of negative numbers.
 
@@ -14,3 +13,8 @@ Error Handling: User-friendly error messages for invalid inputs and division by 
 
 ## Prerequisites
 Java Development Kit (JDK) installed on your system.
+
+
+![Screenshot 2023-08-25 at 1 04 42 AM](https://github.com/SabaDzotsenidze/basic-calculator/assets/138164412/efb32341-54b0-4f56-a57d-fe882355751f)
+![Screenshot 2023-08-25 at 1 05 53 AM](https://github.com/SabaDzotsenidze/basic-calculator/assets/138164412/1304ff42-c4b9-4f6f-9e24-f0762e09bba6)
+![Uploading Screenshot 2023-08-25 at 1.05.37 AM.png…]()
