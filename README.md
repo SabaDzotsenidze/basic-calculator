@@ -17,4 +17,5 @@ Java Development Kit (JDK) installed on your system.
 
 ![Screenshot 2023-08-25 at 1 04 42 AM](https://github.com/SabaDzotsenidze/basic-calculator/assets/138164412/efb32341-54b0-4f56-a57d-fe882355751f)
 ![Screenshot 2023-08-25 at 1 05 53 AM](https://github.com/SabaDzotsenidze/basic-calculator/assets/138164412/1304ff42-c4b9-4f6f-9e24-f0762e09bba6)
-![Uploading Screenshot 2023-08-25 at 1.05.37 AM.png…]()
+![Screenshot 2023-08-25 at 1 05 37 AM](https://github.com/SabaDzotsenidze/basic-calculator/assets/138164412/88532bba-c430-4e8f-8e58-97a29d9f3506)
+
